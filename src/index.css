@@ -1,13 +1,21 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@font-face{
+  font-family: "SB Sans Text";
+  font-style: normal;
+	font-weight: 500;
+  src: local("SansText"),
+  url("./fonts/SB\ Sans\ Text.ttf") format("truetype");
+} 
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+@font-face{
+  font-family: "SB Sans Display";
+  font-style: normal;
+	font-weight: 500;
+  src: local("SansDisplay"),
+  url("./fonts/SB\ Sans\ Display\ Semibold.ttf") format("truetype");
+} 
+
+@import url(./App.css);
+
+@import url(./styles/Header.css);
+@import url(./styles/ClientsList.css);
+@import url(./styles/Client.css);
