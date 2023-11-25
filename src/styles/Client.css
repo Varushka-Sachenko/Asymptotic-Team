@@ -1,11 +1,12 @@
 .client {
     display: grid;
-    margin: 10px auto;
+    margin: 10px;
     border-radius: 10px;
     padding: 10px 20px;
     border: 1px solid #e4e4e4;
     grid-template-areas: "name conditions"
         "button conditions";
+    width: 80%;
 }
 
 .client__name {
@@ -15,6 +16,11 @@
 
 .client__conditions {
     grid-area: conditions;
+    border-radius: 10px;
+    border-left: 6px solid #9f0000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .client__button:hover {
@@ -36,4 +42,26 @@
     background-size: 24px;
     background-repeat: no-repeat;
     border-radius: 5px;
+}
+
+
+.conditions__item {
+    font-family: SB Sans Text;
+    color: #cc0001;
+    padding: 0 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    height: 35px;
+}
+
+.conditions__span {
+    font-weight: 200;
+    color: #7e7e7e;
+    ;
+}
+
+.condition__image {
+    height: 25px;
+    margin-right: 10px;
 }

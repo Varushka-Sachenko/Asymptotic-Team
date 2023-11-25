@@ -1,6 +1,7 @@
 
 .header__logo {
-    height: 80px;
+    height: 45px;
+    align-self: center;
 }
 
 .header {
@@ -9,6 +10,7 @@
     margin: 0 auto;
     justify-content: space-around;
     border-bottom: 1px solid #d8d8d8;
+    height: 80px;
 }
 
 
