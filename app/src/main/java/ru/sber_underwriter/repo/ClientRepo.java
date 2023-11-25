@@ -9,4 +9,5 @@ import java.util.ArrayList;
 
 public interface ClientRepo extends CrudRepository<Client, Integer> {
     Client getClientById (int id);
+    
 }

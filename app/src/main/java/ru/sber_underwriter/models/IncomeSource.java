@@ -10,6 +10,7 @@ import java.time.LocalDate;
 @Table(name="income_source")
 public class IncomeSource {
     @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private int id;
 
     @OneToOne(cascade = CascadeType.ALL)

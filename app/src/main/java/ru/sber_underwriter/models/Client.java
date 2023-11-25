@@ -18,7 +18,7 @@ import java.util.Date;
 @Table(name="client")
 public class Client {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private int id;
     @Column(name = "birth_date")
     private LocalDate birthDate;
@@ -75,5 +75,8 @@ public class Client {
         return requestDateForDSTI;
     }
 
+    public void setDSTI (BigDecimal DSTI) {
+        this.DSTI = DSTI;
+    }
 
 }

@@ -4,10 +4,10 @@ import java.util.ArrayList;
 
 import org.springframework.data.repository.CrudRepository;
 
-import ch.qos.logback.core.net.server.Client;
+import ru.sber_underwriter.models.Client;
 import ru.sber_underwriter.models.IncomeSource;
 import ru.sber_underwriter.models.Obligations;
 
-interface ObligationsRepo extends CrudRepository<Obligations, Integer>{
+public interface ObligationsRepo extends CrudRepository<Obligations, Integer>{
        ArrayList<Obligations> getObligationsByClientId (Client client);
 }

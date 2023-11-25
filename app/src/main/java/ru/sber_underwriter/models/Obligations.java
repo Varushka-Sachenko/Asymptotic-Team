@@ -8,6 +8,7 @@ import java.time.LocalDate;
 @Entity
 public class Obligations {
     @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private int id;
 
     @ManyToOne
@@ -59,6 +60,9 @@ public class Obligations {
     }
     public LocalDate getRequesDate () {
         return requestDate;
+    }
+    public void setRequestDate (LocalDate requestDate) {
+        this.requestDate = requestDate;
     }
 
 }
