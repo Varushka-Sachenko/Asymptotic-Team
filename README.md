@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+**Проект "Оптимизация работы андеррайтера"**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Описание проекта
 
-## Available Scripts
+Проект посвящен оптимизации процесса работы андеррайтера через создание веб-приложения, которое интегрирует базу данных на Spring и предоставляет удобный интерфейс для работы с заявками клиентов.
 
-In the project directory, you can run:
+### Основные страницы приложения
 
-### `npm start`
+1. **Новые заявки:**
+   - **Описание:** Страница предназначена для отображения новых заявок и основных пунктов, по которым решение не может быть принято автоматическим алгоритмом.
+   - **Особенности:**
+     - Выделены основные параметры, влияющие на решение (нестандартный залог, сумма и др.).
+   - **Технологии:**
+     - React: для построения интерфейса, реактивных компонентов и эффективного взаимодействия с пользователем.
+     - Redux: для управления состоянием приложения и обеспечения единообразного доступа к данным.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. **Заявки в работе:**
+   - **Описание:** Страница представляет заявки, которые находятся в процессе обработки андеррайтера и включает чек-листы и форму с данными клиента для упрощения рабочего процесса.
+   - **Особенности:**
+     - Чек-листы и форма для быстрого доступа к необходимой информации.
+   - **Технологии:**
+     - React Router: для навигации между страницами и обеспечения хорошей пользовательской навигации.
+     - Formik: для управления формами и упрощения валидации вводимых данных.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Технологический стек
 
-### `npm test`
+1. **Frontend:**
+   - React: основной фреймворк для построения пользовательского интерфейса.
+   - Redux: для управления состоянием и обмена данными между компонентами.
+   - Axios: для выполнения HTTP-запросов к API бэкенда.
+   - React Router: для реализации навигации в приложении.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. **Backend:**
+   - Spring Boot: для разработки веб-приложения и API.
+   - Spring Data JPA: для взаимодействия с базой данных.
+   - PostgreSQL: выбрана как реляционная база данных для хранения клиентских данных.
+   - RESTful API: для обмена данными между frontend и backend.
 
-### `npm run build`
+### Запуск приложения
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Frontend:**
+   - Установите зависимости: `npm install`
+   - Запустите приложение: `npm start`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Backend:**
+   - Установите зависимости и сконфигурируйте базу данных в `application.properties`.
+   - Запустите Spring Boot приложение.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Команда проекта
 
-### `npm run eject`
+### Березутский Андрей - Backend-разработчик
+- **НИУ ВШЭ**
+- **2 курс**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Борисенко Григорий - Backend-разработчик
+- **НИУ ВШЭ**
+- **2 курс**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Саченко Варя - Frontend-разработчик
+- **НИЯУ МИФИ**
+- **2 курс**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
