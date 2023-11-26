@@ -46,6 +46,7 @@ public class ClientService {
         
         if (period.getDays() > 5) {
             client.setDSTI(getNewDSTI());
+            client.setRequestDateForDSTI(LocalDate.now());
         }
         }
         

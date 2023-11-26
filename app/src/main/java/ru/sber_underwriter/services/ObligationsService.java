@@ -41,6 +41,7 @@ public class ObligationsService {
             Period period = obligation.getRequesDate().until(date);
             if (period.getDays() > 15) {
                 requestNewBKSI(obligation);
+                obligation.setRequestDate(LocalDate.now());
             }
         }
     }
