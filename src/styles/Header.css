@@ -5,6 +5,12 @@
     margin-top: 25px;
 }
 
+.header__logo:hover{
+    opacity: 0.8;
+    cursor: pointer;
+    transition: .3s;
+}
+
 .header {
     display: flex;
     width: 80%;

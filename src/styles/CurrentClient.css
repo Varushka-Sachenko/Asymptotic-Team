@@ -1,12 +1,25 @@
-.current__form {
-    display: flex;
-    flex-direction: column;
+.current {
     width: 80%;
     margin: 40px auto;
 }
 
+.current__form {
+    display: flex;
+    flex-direction: column;
+    font-family: SB Sans Text;
+
+}
+
+.form__label {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    align-items: center;
+    line-height: 40px;
+}
+
 .mail__button {
-    background-image: url(http://localhost:3000/static/media/email.00b77611c2b53e1aed4a.png);
+    background-image: url(../images/email.png);
     position: fixed;
     height: 40px;
     width: 40px;
@@ -18,15 +31,64 @@
     bottom: 35px;
 }
 
-.mail__button:hover{
+.current__title {
+    font-family: SB Sans Display;
+    font-size: 30px;
+}
+
+.mail__button:hover {
     cursor: pointer;
     transform: scale(1.2);
     opacity: .8;
     transition: .3s transform ease-in-out;
 }
 
-.form__input{
+.form__input {
     font-family: SB Sans Text;
     font-weight: bolder;
     line-height: 25px;
+    border: 1px solid #c2c2c2;
+    line-height: 30px;
+}
+
+.input_wrong{
+    background-color: #e3706e;
+}
+
+.saveButton {
+    display: none;
+}
+
+.saveButton_active {
+    display: flex;
+    width: 300px;
+    font-family: SB Sans Text;
+    font-weight: bold;
+    color: #fefefe;
+    background-color: #08a652;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    justify-content: center;
+}
+
+.saveButton_inactive {
+    display: flex;
+    width: 300px;
+    font-family: SB Sans Text;
+    font-weight: bold;
+    color: #fefefe;
+    background-color: #c2c2c2;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    justify-content: center;
+}
+
+.saveButton_active:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
 }

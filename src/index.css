@@ -29,3 +29,6 @@ a{
 @import url(./styles/Client.css);
 @import url(./styles/CurrentClient.css);
 @import url(./styles/EmptyList.css);
+
+@import url(./styles/Checklist.css);
+

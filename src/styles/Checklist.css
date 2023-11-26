@@ -1,0 +1,30 @@
+.checklist__title {
+    font-family: SB Sans Display;
+    font-size: 30px;
+}
+
+
+.checklist__part {
+    font-family: SB Sans Text;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+.checklist__input {
+    border-bottom: 1px solid #c2c2c2;
+    line-height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input_check:checked{
+    background-color: #42e4b5;
+}
+
+.checklist__form {
+    font-family: SB Sans Text;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding-left: 20px;
+}

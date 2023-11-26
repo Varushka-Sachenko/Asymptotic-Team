@@ -30,7 +30,7 @@ function Header(props) {
   return (
     <header className="header">
       <div>
-        <img className="header__logo" src={logo} alt="Логотип" />
+        <Link to="http://www.sberbank.ru/ru/person" target="_blank" rel="noopener noreferrer"><img className="header__logo" src={logo} alt="Логотип" /></Link>
         {/* <div className="progress-bar">
           <div className="task task_not-done" title="Не сделано"></div>
           <div className="task task_in-progress" title="В процессе"></div>
