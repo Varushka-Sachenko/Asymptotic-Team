@@ -1,6 +1,6 @@
-# Asymptotic-Team<<<<<<< HEAD
-<<<<<<< HEAD
-# Getting Started with Create React App
+# Asymptotic-Team<
+
+
 =======
 # Asymptotic-Team
 **Проект "Оптимизация работы андеррайтера"**
