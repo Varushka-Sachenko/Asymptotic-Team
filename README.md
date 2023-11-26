@@ -1,7 +1,4 @@
-# Asymptotic-Team<
 
-
-=======
 # Asymptotic-Team
 **Проект "Оптимизация работы андеррайтера"**
 [Ссылка на видео](https://youtu.be/qAlal-zOe08)
