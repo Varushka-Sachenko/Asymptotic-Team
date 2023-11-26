@@ -75,6 +75,10 @@ public class Client {
         return requestDateForDSTI;
     }
 
+    public void setRequestDateForDSTI (LocalDate requestDateForDSTI) {
+        this.requestDateForDSTI = requestDateForDSTI;
+    }
+
     public void setDSTI (BigDecimal DSTI) {
         this.DSTI = DSTI;
     }

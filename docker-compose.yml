@@ -1,0 +1,52 @@
+version: 
+  '3.4'
+
+networks:
+  dockerapi-dev:
+    driver: bridge 
+
+
+services:
+  java_underwriter:
+    image: java_underwriter:latest
+    depends_on:
+      - "postgres_image"
+    build:
+      context: /app
+      dockerfile: app/Dockerfile
+    ports:
+      - "8080:8080"     
+    networks:
+      - dockerapi-dev  
+
+  front:
+    image: front:latest
+    depends_on:
+      - "java_underwriter"
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"     
+    networks:
+      - dockerapi-dev  
+
+  postgres_image:
+
+    image: 
+      postgres:latest
+    ports:
+      - "5432"
+    restart: 
+      always
+    environment:
+      POSTGRES_USER: "sir"
+      POSTGRES_PASSWORD: "qwerty"
+      POSTGRES_DB: "underwriter"
+    volumes:
+      - db_volume:/var/lib/postgresql/data
+    networks:
+      - dockerapi-dev
+      
+volumes:
+   db_volume:
