@@ -1,5 +1,4 @@
-version: 
-  '3.4'
+version: '3.4'
 
 networks:
   dockerapi-dev:
@@ -12,7 +11,7 @@ services:
     depends_on:
       - "postgres_image"
     build:
-      context: /app
+      context: .
       dockerfile: app/Dockerfile
     ports:
       - "8080:8080"     
