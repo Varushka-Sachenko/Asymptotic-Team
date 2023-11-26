@@ -51,7 +51,7 @@ public class ClientService {
         
     }
 
-    private BigDecimal getNewDSTI () {
+    public BigDecimal getNewDSTI () {
         return new BigDecimal(50); // исправить
     }
 
