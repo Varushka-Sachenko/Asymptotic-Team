@@ -1,0 +1,32 @@
+.current__form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 40px auto;
+}
+
+.mail__button {
+    background-image: url(http://localhost:3000/static/media/email.00b77611c2b53e1aed4a.png);
+    position: fixed;
+    height: 40px;
+    width: 40px;
+    background-color: transparent;
+    border: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: 75px;
+    bottom: 35px;
+}
+
+.mail__button:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    opacity: .8;
+    transition: .3s transform ease-in-out;
+}
+
+.form__input{
+    font-family: SB Sans Text;
+    font-weight: bolder;
+    line-height: 25px;
+}

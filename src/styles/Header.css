@@ -2,6 +2,7 @@
 .header__logo {
     height: 45px;
     align-self: center;
+    margin-top: 25px;
 }
 
 .header {

@@ -1,22 +1,23 @@
 import React from "react";
 import Client from "./Client";
+import CurrentClient from "./CurrentClient";
+function ClientsLists(props) {
+  const handleClick = (card) =>{ props.onCardClick(card);} 
 
-function ClientsLists() {
   return (
     <section className="clientList">
-      <div className="clientList__menu">
-        <h2 className="clientList__item clientList__item_active">
-          Новые заявки
-        </h2>
-        <h2 className="clientList__item">Дозапрос информации</h2>
-        <h2 className="clientList__item">В работе</h2>
-      </div>
       <div className="clients__cards">
-        <Client></Client>
-        <Client></Client>
-        <Client></Client>
-        <Client></Client>
-        <Client></Client>
+        {/* {console.log(props.clients)} */}
+        {props.clients.map((element) => {
+          // console.log(element)
+          return (
+            <Client
+              key={element._id}
+              client={element}
+              onCardClick={handleClick}
+            />
+          );
+        })}
       </div>
     </section>
   );
