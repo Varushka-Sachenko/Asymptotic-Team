@@ -1,0 +1,49 @@
+
+.header__logo {
+    height: 45px;
+    align-self: center;
+    margin-top: 25px;
+}
+
+.header {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-around;
+    border-bottom: 1px solid #d8d8d8;
+    height: 80px;
+}
+
+
+
+.progress-bar {
+    width: 30%;
+    height: 20px;
+    position: relative;
+    border-radius: 10px;
+    align-self: center;
+    overflow: hidden;
+}
+
+.task {
+    height: 100%;
+    position: absolute;
+    transition: width 0.3s ease;
+}
+
+.task_not-done {
+    background-color: #cc0001;
+    width: 30%;
+}
+
+.task_in-progress {
+    background-color: #faed00;
+    width: 30%;
+    left: 30%;
+}
+
+.task_done {
+    background-color: #08a652;
+    width: 50%;
+    left: 60%;
+}

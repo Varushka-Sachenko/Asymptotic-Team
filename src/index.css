@@ -1,0 +1,31 @@
+@font-face{
+  font-family: "SB Sans Text";
+  font-style: normal;
+	font-weight: 500;
+  src: local("SansText"),
+  url("./fonts/SB\ Sans\ Text.ttf") format("truetype");
+} 
+
+@font-face{
+  font-family: "SB Sans Display";
+  font-style: normal;
+	font-weight: 500;
+  src: local("SansDisplay"),
+  url("./fonts/SB\ Sans\ Display\ Semibold.ttf") format("truetype");
+}
+
+.invisible{
+  display: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+@import url(./App.css);
+
+@import url(./styles/Header.css);
+@import url(./styles/ClientsList.css);
+@import url(./styles/Client.css);
+@import url(./styles/CurrentClient.css);
+@import url(./styles/EmptyList.css);

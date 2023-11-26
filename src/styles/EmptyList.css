@@ -1,0 +1,37 @@
+.emptySection {
+    width: 60%;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid #c2c2c2;
+    padding: 40px 0;
+    height: 60vh;
+}
+
+.empty__image {
+    width: 20%;
+}
+
+.empty__text {
+    font-family: SB Sans Text;
+    font-size: 20px;
+}
+
+.empty__button {
+    font-family: SB Sans Text;
+    font-weight: bold;
+    color: #fefefe;
+    background-color: #08a652;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.empty__button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
